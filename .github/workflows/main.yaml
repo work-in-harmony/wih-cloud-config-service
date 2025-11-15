@@ -31,10 +31,10 @@ jobs:
 
       # ---------------------- DOCKER BUILD & PUSH ----------------------
       - name: Build Docker image
-        run: docker build -t ${{ secrets.DOCKER_USERNAME }}/eureka-server:latest .
+        run: docker build -t ${{ secrets.DOCKER_USERNAME }}/wih-cloud-config-service:latest .
 
       - name: Push Docker image
-        run: docker push ${{ secrets.DOCKER_USERNAME }}/eureka-server:latest
+        run: docker push ${{ secrets.DOCKER_USERNAME }}/wih-cloud-config-service:latest
 
       # ---------------------- AWS LOGIN ----------------------
       - name: Configure AWS Credentials
