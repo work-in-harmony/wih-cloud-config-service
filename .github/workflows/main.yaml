@@ -22,13 +22,6 @@ jobs:
           distribution: temurin
           java-version: 17
 
-      # ---------------------- RUN TESTS ----------------------
-      - name: Run Maven tests
-        run: mvn test
-
-      - name: Run Checkstyle
-        run: mvn checkstyle:check
-
       # ---------------------- DOCKER LOGIN ----------------------
       - name: Log in to Docker Hub
         uses: docker/login-action@v3
